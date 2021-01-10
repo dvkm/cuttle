@@ -5,18 +5,10 @@ function CardPicker(props) {
   const field = props?.field ?? {};
 
   if (cards) {
-    return (
-      <div>
-
-      </div>
-    );
+    return <div></div>;
   }
 
-  return (
-    <div>
-
-    </div>
-  );
+  return <div></div>;
 }
 
 export default CardPicker;
