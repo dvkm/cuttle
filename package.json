@@ -3,12 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@elastic/datemath": "^5.0.3",
+    "@elastic/eui": "^31.1.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "boardgame.io": "^0.42.2",
+    "eslint": "^7.17.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-react": "^7.22.0",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "socket.io-client": "^3.0.4",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -34,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "prettier": "^2.2.1"
+  },
+  "proxy": "http://localhost:5000"
 }
