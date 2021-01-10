@@ -133,7 +133,7 @@ def on_get_players():
 
 @socketio.on('test')
 def test():
-    return session.get('username', 'nothing')
+    return session.get('username', 'no username')
 
 
 @socketio.on('get_oneoff')
