@@ -1,4 +1,6 @@
 import json
+from os import getenv
+
 from flask.json import JSONEncoder
 
 import flask
@@ -155,4 +157,10 @@ def on_move(data):
 
 
 if __name__ == '__main__':
-    socketio.run(app, debug=False, host='0.0.0.0', use_reloader=True)
+    socketio.run(
+        app,
+        debug=False,
+        host=getenv("IP", "0.0.0.0"),
+        port=int(getenv("PORT", "80")),
+        use_reloader=True
+    )
