@@ -11,3 +11,4 @@ pytest
 python-dotenv
 requests
 Flask-Session
+flask_cors
